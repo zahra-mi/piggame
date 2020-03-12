@@ -8,6 +8,9 @@ html {
     font-size: 18px;
     height: 100%;
     position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .wrapper {
@@ -153,4 +156,128 @@ html {
 
 .winner {
     color: rgb(15, 165, 83);
+}
+
+.start-form {
+    transition: .4s;
+    z-index: 200;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -700px;
+    width: 400PX;
+    background: #f5f5f5;
+    padding: 20px 30px 20px 20px;
+}
+
+.input-lable {
+    margin-bottom: 10px;
+}
+
+#set_defult,
+#submit {
+    display: block;
+    color: #f5f5f5;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+}
+
+#set_defult {
+    background-color: #c5c3c3;
+    outline: none;
+}
+
+#submit {
+    background-color: #4CAF50;
+    text-decoration: none;
+    outline: none;
+}
+
+#set_defult:hover {
+    background-color: #a3a1a1;
+    cursor: pointer;
+    box-shadow: -1px 3px 3px 0px rgba(0, 0, 0, 0.24);
+}
+
+#submit:hover {
+    background-color: rgb(39, 139, 43);
+    cursor: pointer;
+    box-shadow: -1px 6px 8px 0px rgba(0, 0, 8, 0.24);
+}
+
+.input {
+    vertical-align: middle;
+    color: #555;
+    font-family: 'lato';
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    text-transform: lowercase;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+    border: 1px solid transparent;
+    border-radius: 2PX;
+    margin-top: 5px;
+}
+
+.input:focus {
+    border: 1px solid #8f8b8b;
+}
+
+.wrapper-input {
+    display: block;
+    padding: 10PX;
+}
+
+.dark-bg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.heder-title {
+    display: inline-block;
+    margin: 0px 0 10px 10px;
+}
+
+.close-icon {
+    vertical-align: middle;
+    position: absolute;
+    right: 20px;
+    top: 27px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.close-icon:hover {
+    opacity: 1;
+}
+
+.wrapper-score {
+    position: absolute;
+    top: 520px;
+    left: 50%;
+    transform: translate(-50%);
+    color: #555;
+    font-size: 18px;
+    font-family: 'lato';
+    text-align: center;
+    outline: none;
+    padding: 10px;
+    width: 160px;
+    text-transform: uppercase;
+}
+
+.show-score {
+    display: inline-block;
 }

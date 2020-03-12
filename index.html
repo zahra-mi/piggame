@@ -34,16 +34,43 @@
         <button class="btn-roll btn"><img src="./image/102.png" >Roll dice</button>
         <button class="btn-hold btn"><img src="./image/101.png" >Hold</button>
 
-        <input type="text" placeholder="Final score" class="final-score">
+
+        <div class="wrapper-score">
+            <span>score:</span>
+            <p class="show-score"></p>
+        </div>
+
 
         <img src="./image/dice-5.png" alt="Dice" class="dice" id="dice-1">
-        <!-- <img src="./image/dice-5.png" alt="Dice" class="dice" id="dice-2"> -->
-
 
 
     </div>
+    <form id="new_game_form" class="start-form" autocomplete="off">
+        <nav class="heder">
+            <h1 class="heder-title">New Game</h1>
+            <img src="./image/multiply.png" class="close-icon">
+        </nav>
+        <div class="wrapper-input">
+            <label for="name1" class="input-lable">Player1</label>
+            <input type="text" id="name1" name="name1" placeholder="ENTER YOUR NAME" class="input">
+        </div>
+        <div class="wrapper-input">
+            <label for="name2" class="input-lable">Player2</label>
+            <input type="text" id="name2" name="name2" placeholder="ENTER YOUR NAME" class="input">
+        </div>
+        <div class="wrapper-input">
+            <label for="final-score" class="input-lable">final-score</label>
+            <input type="number" id="score" name="score" placeholder="ENTER FINAL SCORE" class="input">
+        </div>
 
-    <script src="./script/script.js"></script>
+        <br>
+        <input type="submit" value="Set Defult" id="set_defult">
+        <input type="submit" value="Submit" id="submit">
+    </form>
+
+    <div class="dark-bg"></div>
+
+    <script src="./challenge.js"></script>
 </body>
 
 </html>
